@@ -1,3 +1,51 @@
+@media (max-width:991px){
+    header{
+        padding: 0 0;
+    }
+
+    .contact-phone .hotline{
+        display: none;
+    }
+    .menu  ul.nav_menu{
+        display: none;
+    }
+    .header-top{
+        top: -5px;
+        right: 75px;
+    }
+    .menu a.toggle-menu-mb{
+        display: block;
+        position: fixed;
+        top: 45px;
+        right: 15px;
+    }
+
+    /* Menu Moblie */
+
+
+    /* Menu Footer */
+    .menu-footer ul {
+        flex-wrap: wrap;
+        justify-content:space-around
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 576px)
 {
 .container {

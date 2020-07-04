@@ -8,6 +8,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #545454;
     line-height: 24px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 ul{
     list-style: none;
@@ -15,13 +17,53 @@ ul{
 }
 header{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
+    align-items: stretch;
+    background: rgb(29,29,27);
+    padding: 0 30px;
+    transition: all .4s ease;
+    /* background: rgba(0,0,0, 0.9); */
+    /* background: url(./../img/bg_opc2.png); */
+}
+
+header.header-sticky{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+/* Edit Khi Scroll */
+header.header-sticky .menu{
+    margin-top: 0;
+}
+header.header-sticky .header-top{
+    top: 10px;
+}
+header.header-sticky .header-top .contact-phone{
+    display: block;
+    text-align: right;
+}
+header.header-sticky .header-top span.hotline{
+    display: block;
+}
+
+
+/*  */
+
+header a.logo img{
+    height: 120px;
+}
+header nav{
+    position: relative;
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
-header a.logo img{
-    height: 75px;
-}
 .header-top{
+    position: absolute;
+    top: 0px;
+    right: 0;
     width: 100%;
     padding: 0 15px;
     
@@ -37,9 +79,20 @@ header a.logo img{
    margin-left: 10px;
 }
 
+.contact-phone .phone_mobile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+.contact-phone .phone_mobile i.fa{
+    text-align: center;
+    margin-top: 7px;
+}
+
 .contact-phone a.phone-num{
     font-size: 18px;
-    color: #093;
+    color: #A5772C;
     font-weight: 900;
     text-decoration: none;
 }
@@ -50,60 +103,78 @@ header a.logo img{
     padding: 0 30px;
     display: flex;
     justify-content:space-between;
-    background: #fff; 
+    margin-top: 50px;
+    position: relative;
 }
 
-/* .menu .toggle-menu-mb{
+.menu a.toggle-menu-mb{
     display: none;
     text-align: center;
-    padding: 17px 0;
+    /* padding: 17px 0; */
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
 
-}
-.menu .toggle-menu-mb a{ 
-    color: #fff;
-}
-.menu .toggle-menu-mb a{ 
-    color: #fff;
-} */
-.menu   ul{
+
+.menu  ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
 }
+.menu  ul.nav_menu{
+    padding-bottom: 10px;
+
+}
+
 .menu  ul li.nav-item{
     list-style: none;
-    border-left: 1px dotted #bdc3c7;
+    border-left: 1px dotted #a5b1c2;
     position: relative;
     transition: all .4s ease;
+    
 }
 
 .menu  ul li.nav-item:last-child{
-    border-right: 1px dotted #bdc3c7;
+    border-right: 1px dotted #a5b1c2;
 }
-.menu  ul li  a{
+.menu  ul li a{
     text-align: center;
-    color: #575757;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 500;
     text-transform: uppercase;
-    padding: .3rem 1.2rem; 
+    padding: .3rem 1rem; 
     text-decoration: none;
-    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: bold;
+    transition: all .3s ease;
+    letter-spacing: 2px;
+    /* mix-blend-mode: hue; */
 }
 .menu  ul li  a img{
     width: 20px;
     height : 20px;
+    
+    transition:transform .4s ease;
 }
-
+.menu  ul li a:hover img{
+    background: #ffffff;
+    
+} 
 .menu  ul li  a span{
     display: block;   
-    margin-top: 5px;  
+    margin-top: 5px; 
+    font-size: 12px; 
 }
 
 .menu  ul li a:hover{
-    color: #093;
-    
+    color: #A5772C;
+    font-weight: 600;
 }
+
+
+
 .menu ul li.active{
     background: #F4E45F;
 }
@@ -112,8 +183,8 @@ header a.logo img{
 }
 
 /* Sub MEnu */
-.menu  ul li.nav-item:hover > ul.sub_menu{
-    overflow: visible;
+.menu  ul li.nav-item:hover  ul.sub_menu{
+    visibility:visible;
     opacity: 1;
     z-index: 100;
 }
@@ -125,11 +196,11 @@ ul.sub_menu{
     /* left: 100%; */
     min-width: 240px;
     background: url(./../img/bg_opc2.png);
-    
-    overflow: hidden;
+    visibility: hidden;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
     transition: all .4s ease;
+    margin-top: 10px;
 }
 .menu ul.sub_menu li{
     line-height: 35px;
@@ -141,6 +212,9 @@ ul.sub_menu{
     font-weight: normal;
     color: #f1f2f6;
     opacity: 0.8;
+    font-size: 12px;
+    display: block;
+    text-align: left;
 }
 
 .menu ul.sub_menu li:hover > ul.sub_menu_child{
@@ -156,17 +230,69 @@ ul.sub_menu{
     left: 100%;
     min-width: 240px;
     background: url(./../img/bg_opc2.png);
-
     overflow: hidden;
     opacity: 0;
     z-index: 0;
     transition: all .4s ease;
 }
+
+
 /* .no-gutters{
     padding-left: 0;
     padding-right: 0;
 } */
 /* End Menu */
+
+
+/* MEnu Mobile */
+.menu--mobile{
+    display: none;
+    width: 100%;
+    background: url(./../img/bg_news_home.jpg);
+    position: fixed;
+    top: 120px;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+.menu--mobile.show{
+    display: block;
+}
+
+.menu--mobile li{
+    border-bottom: 1px solid gray;
+
+    
+}
+.menu--mobile li a{
+    padding:7px 15px; 
+   color: #b8b8b8;
+   position: relative;
+   display: block;
+   text-decoration: none;
+}
+.menu--mobile li a i.fa{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform:translateY(-50%);
+}
+
+.menu--mobile ul.sub-menu-mb{
+    display: none;
+    background: url(./../img/bg_fo.jpg);
+}
+.menu--mobile ul.sub-menu-mb a{
+    padding:7px  15px 7px 30px; 
+
+}
+
+.menu--mobile ul.sub-menu-mb.active{
+    display: block;
+}
+
+
+/* End MEnu Mobile */
 
 /* Banner Slider  */
 
@@ -184,14 +310,17 @@ ul.sub_menu{
     overflow: hidden;
 }
 .wrap-slider .carousel-item.active img{
-    animation: scale 4s linear infinite;
+    animation: scale 6s linear infinite;
 }
 @keyframes scale{
     from{
         transform:scale(1.3);
+        opacity: 0.5;
     }
     to{
         transform:scale(1);
+        opacity: 1;
+
     }
 }
 .wrap-slider .carousel-item img{
@@ -234,7 +363,7 @@ ul.sub_menu{
     color: #fff;
 }
 .wrap-slider .carousel-indicators{
-    bottom: 40px;
+    right: 0;
 }
 .wrap-slider .carousel-indicators li{
     width: 22px;
@@ -276,17 +405,112 @@ ul.sub_menu{
     padding: 5px 0;
 }
 .contact-phone span{
-    color: sandybrown;
+    color:#fff;
     font-style: italic;
 }
 .contact-phone a.phone-banner{
-    color: #fff000;
+    color: #A5772C;
     font-size: 22px;
     font-weight: bold;
 }
 
 
 /* End Banner Slider  */
+
+
+/* Card San Pham */
+.wrapCard{
+    width: 100%;
+}
+.border_lime{
+    border: 1px dotted #A5772C;
+}
+.border_yellow{
+    border: 1px dotted #D0BC3F;
+}
+.wrapCard .card_img{
+    width: 100%;  
+    position: relative;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.wrapCard .card_img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    transform: skewX(-25deg);
+    transition: all .6s ease;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+}
+.wrapCard .card_img:hover:before{
+    left: 100%;
+}
+
+
+.wrapCard .card_img img{
+    width: 100%;
+    object-fit: cover;
+}
+.wrapCard .card_img h3.card_title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-bottom: 0;
+    line-height:30px;
+    width: 100%;
+}
+.bg_1{
+    background: #A5772C;
+}
+.bg_2{
+    background: #D0BC3F;
+}
+.wrapCard .card_img h3.card_title a{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapCard .card_body{
+    padding: 15px 15px 25px 15px;
+    border-bottom-right-radius: 20px;
+}
+
+.wrapCard .card_body p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+.wrapCard .card_body p img{
+    width: auto;
+    margin-bottom: 3px;
+}
+
+a.btn-geranal{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    background: linear-gradient(to right, rgb(236, 213, 63) 0%,rgb(235, 228, 25) 24%,rgb(206, 209, 53) 61%,rgb(224, 210, 11) 100%);
+}
+a.btn-geranal:hover{
+    background: linear-gradient(to right, #093 0%,rgb(18, 207, 116) 24%,rgb(78, 228, 151) 61%,rgb(20, 145, 40) 100%);
+}
+
+.btn_radius{
+    border-radius: 15px;
+}
+
+
+
+/* End Card San Pham */
 
 /* Footer */
 footer{
@@ -308,6 +532,10 @@ footer{
 .menu-footer ul li a{
     color: #545454;
     text-decoration: none;
+    transition:.3s;
+}
+.menu-footer ul li a:hover{
+    box-shadow:   inset 0 0 20px #fff , 0 0 30px #fff;
 }
 
 /* Footer COntent */
@@ -322,10 +550,10 @@ footer{
 
 .footer__item h3.title{
     font-size:22px;
-    color: #093;
+    color: #D0BC3F;
     font-weight: 600;
     margin-bottom: 15px;
-    border-bottom: 1px dotted #093;
+    border-bottom: 1px dotted;
 }
 .footer__item span {
     font-size:16px;
@@ -359,13 +587,21 @@ footer{
     width: 100%;
     padding: 10px;
 }
-.footer__item .form_submit button{
-    width: 35%;
-    background: linear-gradient(to right, rgb(171,36,42) 0%,rgb(251,2,2) 24%,rgb(239,22,2) 61%,rgb(164,39,45) 100%);
+/* Button CHung */
+ a.button{
+    display: block;
+    background: linear-gradient(to right, rgb(236, 213, 63) 0%,rgb(235, 228, 25) 24%,rgb(206, 209, 53) 61%,rgb(224, 210, 11) 100%);
     transition: all .4s ease;
+  
+    text-align: center;
+    color: #fff;
+    padding: .375rem 0;;
+}
+a.btn_footer{
+    width: 35%;
     border: 2px solid black;
 }
-.footer__item .form_submit button:hover{
+ a.button:hover{
     background: linear-gradient(to right, #093 0%,rgb(18, 207, 116) 24%,rgb(78, 228, 151) 61%,rgb(20, 145, 40) 100%);
 }
 
@@ -397,7 +633,7 @@ footer{
 }
 
 .end-footer{
-    background: #093;
+    background: rgba(0,0,0,.5);
     position: fixed;
     bottom:0;
     left: 0;

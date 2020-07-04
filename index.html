@@ -9,11 +9,17 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./asset/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/res-style.css">
+ 
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/res-index.css">
+ 
 </head>
 
 <body>
@@ -25,59 +31,66 @@
     <nav>
       <div class="header-top">
         <div class="contact-phone">
-          <span>Hotline : <a href="#" class="phone-num">+84 789 252525</a></span>
+          <!-- <span class="phone_mobile">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </span> -->
+          <span class="hotline">Hotline : <a href="#" class="phone-num">+84 789 252525</a></span>
           <img src="img/vn.png" alt="">
           <img src="img/en.png" alt="">
         </div>
       </div>
       <div class="menu">
         <div class="container">
+          <a href="#" class="toggle-menu-mb" id="toggleMenu">
+            <i class="fa fa-align-justify" aria-hidden="true"></i>
+            Menu
+          </a>
           <ul class="nav_menu">
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/home.png" alt="">
-                <span>Home</span>
+                <span>Trang Chủ</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/about.png" alt="">
-                <span>Abouts us</span>
+                <span>Giới Thiệu</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/khachsan.png" alt="">
-                <span>Hotels</span>
+                <span>Khách Sạn</span>
               </a>
               <ul class="sub_menu">
                 <li>
-                  <a href="#">A25 hotel in Hanoi</a>
+                  <a href="#">Miahotel in Hanoi</a>
                 </li>
                 <li>
-                  <a href="#">A25 hotel in HCM</a>
+                  <a href="#">Miahotel in HCM</a>
                 </li>
                 <li>
-                  <a href="#">A25 hotel in Da Nang</a>
+                  <a href="#">Miahotel in Da Nang</a>
                 </li>
                 <li>
-                  <a href="#">A25 hotel in Germimy</a>
+                  <a href="#">Miahotel in Germimy</a>
                   <ul class="sub_menu_child">
                     <li>
-                      <a href="#">A25 Hotel in Thanh Xuan</a>
+                      <a href="#">MiaHotel in Thanh Xuan</a>
                     </li>
                     <li>
-                      <a href="#">A25 Hotel in Dong Da</a>
+                      <a href="#">MiaHotel in Dong Da</a>
                     </li>
                     <li>
-                      <a href="#">A25 Hotel in Tran Duy Hung</a>
+                      <a href="#">MiaHotel in Hoang Mai</a>
                     </li>
                     <li>
-                      <a href="#">A25 Hotel in Cau Giay</a>
+                      <a href="#">MiaHotel in Cau Giay</a>
     
                     </li>
                     <li>
-                      <a href="#">A25 Hotel in Yen Hoa</a>
+                      <a href="#">MiaHotel in Yen Hoa</a>
                     </li>
                   </ul>
                 </li>
@@ -86,7 +99,7 @@
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/booking.png" alt="">
-                <span>Service</span>
+                <span>Dịch vụ</span>
               </a>
             </li>
             <li class="nav-item">
@@ -106,32 +119,117 @@
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/news.png" alt="">
-                <span>New</span>
+                <span>Tin Tức</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/promotion.png" alt="">
-                <span>Promation</span>
+                <span>Khuyến Mại</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/solution.png" alt="">
-                <span>RECRUITMENT</span>
+                <span>Tuyển Dụng</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <img src="./img/menu/contact.png" alt="">
-                <span>Contact</span>
+                <span>Liên Hệ</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
+    <div class="menu--mobile" id="menuMobile">
+      <ul>
+        <li>
+          <a href="#">Trang Chủ</a>
+        </li>
+        <li>
+          <a href="#">Giới Thiệu</a>
+        </li>
+        <li>
+          <a href="#">Dịch Vụ
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <ul class="sub-menu-mb">
+            <li><a href="#">Dịch vụ nhà hàng</a></li>
+            <li><a href="#">Dịch vụ phòng hội thảo</a></li>
+            <li><a href="#">Karaoke 60 Thợ Nhuộm</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Khách Sạn
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <ul class="sub-menu-mb">
+            <li>
+              <a href="#">Miahotel in Hanoi</a>
+            </li>
+            <li>
+              <a href="#">Miahotel in HCM</a>
+            </li>
+            <li>
+              <a href="#">Miahotel in Da Nang</a>
+            </li>
+            <li>
+              <a href="#">Miahotel in Germimy</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Tour Du Lịch
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <ul class="sub-menu-mb">
+            <li>
+              <a href="#">Tour Trong Nước</a>
+            </li>
+            <li>
+              <a href="#">Tour Quốc Tế</a>
+            </li>
+          </ul>
+
+        </li>
+        <li>
+          <a href="#">Cẩm Nang Du Lịch
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <ul class="sub-menu-mb">
+            <li>
+              <a href="#">Văn hóa Ẩm thực</a>
+            </li>
+            <li>
+              <a href="#">Hành trình khám phá</a>
+            </li>
+            <li>
+              <a href="#">Kinh nghiệm hay</a>
+            </li>
+          </ul>
+
+        </li>
+
+        <li>
+          <a href="#">Tin Tức</a>
+        </li>
+        <li>
+          <a href="#">Khuyến Mãi</a>
+        </li>
+        <li>
+          <a href="#">Hình Ảnh</a>
+        </li>
+        <li>
+          <a href="#">Tuyển Dụng</a>
+        </li>
+        <li>
+          <a href="#">Liên Hệ</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <!-- End Headaer_Top -->
 
@@ -182,7 +280,7 @@
         </a>
       </div>
     </div>
-    <div class="banner__bottom">
+    <!-- <div class="banner__bottom">
       <div class="container">
         <div class="banner__bottom__content">
           <div class=" contact-phone contact-phone-b">
@@ -197,9 +295,240 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <!-- End Banner Slider -->
+  <!-- Main -->
+  <main>
+    <div class="booking">
+      <div class="booking-left"></div>
+      <div class="booking-right"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-md-12 col-lg-6">
+            <div class="booking__item">
+              <div class="tab_main">
+                <a href="#" class="active">Đặt Phòng</a>
+                <a href="#">Tra Cứu Booking</a>
+              </div>
+              <div class="tab_contents">
+                <div class="tab_item active">
+                  <div class="row">
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Họ và tên</label>
+                        <input type="text"
+                          class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Số điện thoại</label>
+                        <input type="text"
+                          class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Địa chỉ email</label>
+                        <input type="text"
+                          class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Chi Nhánh</label>
+                        <select class="form-control" name="" id="">
+                          <option>...............</option>
+                          <option>Hà Nội</option>
+                          <option>Hồ Chí Minh</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Khu Vực</label>
+                        <select class="form-control" name="" id="">
+                          <option>...............</option>
+                          <option>Tây Hồ</option>
+                          <option>Hai Bà Trưng</option>
+                          <option>Cầu Giấy</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Khách Sạn</label>
+                        <select class="form-control" name="" id="">
+                          <option>...............</option>
+                          <option>Hà Tây Hotel</option>
+                          <option>Hà Tây Hotel</option>
+                          <option>Hà Tây Hotel</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Loại Phòng</label>
+                        <select class="form-control" name="" id="">
+                          <option>...............</option>
+                          <option>Vip</option>
+                          <option>Tiêu Chuẩn</option>
+                          <option>Giá Rẻ</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Ngày nhận phòng</label>
+                        <input type="text"
+                          class="form-control" name="" id="date_den" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Ngày trả phòng</label>
+                        <input type="text"
+                          class="form-control" name="" id="date_di" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="col col-8 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Yêu cầu thêm</label>
+                        <textarea class="form-control" name="" id="" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="col col-4 gutter_ms">
+                      <div class="form-group">
+                        <label for="">Số lượng phòng</label>
+                        <input type="text"
+                          class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted"></small>
+                      </div>
+                      <a href="#" class="btn-block button">ĐẶT Phòng</a>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="tab_item">
+                  <div class="code">
+                    <p>Nhập mã <b>Code</b> của bạn để tra cứu thông tin Booking tại MIA HOTEL</p>
+                    <input type="text" class="input_code" placeholder="NHẬP MÃ CODE CỦA BẠN">
+                    <p class="note"><i><b>Lưu ý</b>: Mã CODE là dãy số được gửi vào Email của Quý khách sau khi Đặt phòng thành công.</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-12 col-lg-6">
+            <div class="booking__item">
+               <div class="booking__header">
+                  <h3 class="title_box">TIN TỨC NỔI BẬT</h3>
+                  <div class="nav-area">
+                    <img src="./img/ico_thoitiet.jpg" alt="">
+                    <a href="#">Hà Nội</a>
+                    <a href="#">Đà Nẵng</a>
+                    <a href="#">Hồ Chí Minh</a>
+                  </div>
+               </div>
+               <div class="booking__body">
+                 <div class="media">
+                   <a class="media-img" href="#">
+                     <img src="./img/booking-bang-the-vietcombank-nhan-ngan-uu-dai.jpg" alt="">
+                   </a>
+                   <div class="media-body">
+                     <h5>Booking bằng thẻ Vietcombank nhận ngàn ưu đãi</h5>
+                     <p>Tại hệ thống khách sạn A25, chỉ cần thanh toán bằng thẻ ghi nợ hoặc thẻ tín dụng Vietcombank, khách hàng ...</p>
+                   </div>
+                 </div>
+                 <div class="intro-general">
+                    <a href="#"><span>Hà Nội đẹp dịu dàng qua 12 mùa hoa đặc trưng</span></a>
+                    <a href="#"><span>CUỘC THI MIATRONG TÔI</span></a>
+                    <a href="#"><span>Khách sạn MIAnhiệt liệt hưởng ứng Ngày toàn dân phòng cháy chữa cháy 4/10</span></a>
+                    <a href="#"><span>Chuyến đi thực tế tại khách sạn MIALê Thị Riêng của sinh viên Đại học Nguyễn Tất</span></a>
+                    <a href="#"><span>CUỘC THI THIẾT KẾ LOGO NHẬN DIỆN THƯƠNG HIỆU A25</span></a>
+                 </div>   
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro_branch">
+      <div class="container">
+        <h2 class="_title">HỆ THỐNG CHI NHÁNH MIA HOTEL</h2>
+      <p class="text-italic text-center">Chi nhánh MIA HOTEL có mặt tại: Hà Nội, Thành phố Hồ Chí Minh, Đà Nẵng</p>
+      <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="wrapCard">
+            <div class="card_img">
+                <img src="./img/index/card1.jpg" alt="">
+                <h3 class="card_title bg_1"><a href="#">KHÁCH SẠN TẠI HÀ NỘI</a></h3>
+            </div>
+            <div class="card_body border_lime">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt omnis cum nemo sapiente modi accusantium maxime iusto, odit saepe corrupti quae dolore magni. Omnis quia reiciendis molestiae eaque excepturi.</p>
+              <a href="#" class="btn-geranal btn_radius">Xem Thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="wrapCard">
+            <div class="card_img">
+                <img src="./img/index/card2.jpg" alt="">
+                <h3 class="card_title bg_1"><a href="#">KHÁCH SẠN TẠI ĐÀ NẴNG</a></h3>
+            </div>
+            <div class="card_body border_lime">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt omnis cum nemo sapiente modi accusantium maxime iusto, odit saepe corrupti quae dolore magni. Omnis quia reiciendis molestiae eaque excepturi.</p>
+              <a href="#" class="btn-geranal btn_radius">Xem Thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="wrapCard">
+            <div class="card_img">
+                <img src="./img/index/card3.jpg" alt="">
+                <h3 class="card_title bg_1"><a href="#">KHÁCH SẠN TẠI HỒ CHÍ MINH</a></h3>
+            </div>
+            <div class="card_body border_lime">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt omnis cum nemo sapiente modi accusantium maxime iusto, odit saepe corrupti quae dolore magni. Omnis quia reiciendis molestiae eaque excepturi.</p>
+              <a href="#" class="btn-geranal btn_radius">Xem Thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="hotel-highlights">
+      <div class="container">
+        <h2 class="_title">KHÁCH SẠN NỔI BẬT</h2>
+      <p class="text-center text-italic">Một số khách sạn nổi bật của Mia Hotel</p>
+      <div class="list_hotels">
+        <div class="owl-carousel owl-theme" id="sliderIndex">
+          <div class="item">
+            <div class="wrapCard">
+              <div class="card_img">
+                  <img src="./img/index/c4.jpg" alt="">
+                  <h3 class="card_title bg_2"><a href="#">Mia Hotel 45 Phan Chu Trinh</a></h3>
+              </div>
+              <div class="card_body border_yellow">
+                <p class="text-italic">Xếp Loại : <img src="./img/1_star.gif" alt="" class="star"></p>
+                <p class="text-italic">Ngõ 218 Lĩnh Nam, Hoàng Mai, Hà Nội</p>
+                <p>Điện Thoại L: <span class="spanPhone">0337217711</span></p>
+                <a href="#" class="btn-geranal btn_radius">Xem Thêm</a>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
   <!-- Fotter -->
   <footer>
       <div class="menu-footer">
@@ -246,7 +575,7 @@
                 <div class="footer__item">
                   <h3 class="title">Contact Information</h3>
                   <div class="address">
-                    <span>A25 HOTEL GROUPS</span>
+                    <span>MIA HOTEL GROUPS</span>
                     <p>Head Office: 90 Giang Vo - Dong Da - Ha Noi</p>
                     <p>Tel: <a href="#">(84-24) 3736 8933 - 024 3736 8934 -</a></p>
                     <p>Hotline: <a href="#">0789 252525</a></p>
@@ -274,7 +603,7 @@
                     <div class="input_group">
                       <input type="text" placeholder="Enter Your Email">
                     </div>
-                    <button class="button">Sign Me Up!</button>
+                    <a href="#" class="button btn_footer" >Sign Me Up!</a>
                   </div>
                   <div class="list-icon-mxh">
                       <div class="icon-item">
@@ -319,7 +648,28 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="./asset/Owl/owl.carousel.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/slider.js"></script>
+  <script>
+  $(function () {
+    $('#date_den').datetimepicker({
+        timepicker: true,
+        datepicker: true,
+        format: 'Y-m-d H:i', // formatDate
+        hours12: false,
+        step: 1
+    });
+    $('#date_di').datetimepicker({
+        timepicker: true,
+        datepicker: true,
+        format: 'Y-m-d H:i', // formatDate
+        hours12: false,
+        step: 1
+    });
+    });
+  </script>
 </body>
 
 </html>

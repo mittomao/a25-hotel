@@ -20,6 +20,16 @@
     .input-search input{
         width: 100%;
     }
+
+    /* Dot Carousel */
+    .list_hotels .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+       
+    }
+    .list_hotels .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+       
+    }
 }
 
 

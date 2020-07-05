@@ -72,6 +72,35 @@ a.button_ok:hover:before ,a.button_ok:hover:after{
     height: calc(100% + 16px);
     border-color: #A5772C;
 }
+
+/* Custom wrapcard */
+.wrapCard.hide{
+    transform: scale(0);
+    height: 0;
+}
+.wrapCard.show{
+    height: 100%;
+    animation: show .5s ease-in-out;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+
+        /* transform: scale(1); */
+    }
+}
+
+
+
+
+
+
+
+
 @media (max-width:991px){
     main{
        position: relative;

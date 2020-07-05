@@ -106,9 +106,11 @@
     display: flex;
     align-items: center;
 }
-.booking__header h3.title_box{
+ h3.title_box{
     color: #D0BC3F;
     margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 .booking__header .nav-area{
     margin-left: auto;
@@ -252,3 +254,65 @@ h2._title{
     width: auto;
     display: inline-block;
 }
+
+
+/* hotel-highlights */
+.hotel-highlights{
+    padding: 40px 0;
+    background: #EFEEE9;
+}
+/* End hotel-highlights */
+/* service */
+
+ .service{
+    padding: 30px 0;
+ }
+
+ .service__list{
+    margin-top: 30px;
+    background: #EFEEE9;
+    border-radius: 5px;
+ }
+
+ .tab_service_main{
+     width: 100%;
+
+ }
+ .tab_service_main a{
+     display: block;
+     padding: 10px 20px;
+     text-align: right;
+     text-decoration: none;
+     color: #545454;
+     background: #DBD8D7;
+ }
+ .tab_service_main a:hover{
+     background:rgb(161, 154, 151);
+     color: #f3f1f2;
+ }
+
+ .tab_service_main a.active{
+    color: #fff;
+    background: linear-gradient(to right, rgb(236, 213, 63) 0%,rgb(163, 159, 50) 24%,rgb(226, 229, 29) 61%,rgb(132, 124, 6) 100%);
+}
+
+ .tab_servie_item .box_img img{
+    width: 100%;
+ }
+ .tab_servie_item{
+     padding: 15px 15px 15px 0;
+     display: none;
+ }
+ .tab_servie_item.active{
+     display: block;
+ }
+
+ .tab_servie_item p._text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+ }
+
+/* End service */

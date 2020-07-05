@@ -27,7 +27,7 @@ $(function () {
         }
      });
 
-    //  Tab
+    //  Tab 1
 
     const tabLinks = $(".tab_main a");
     const tabMains = $(".tab_contents .tab_item");
@@ -38,6 +38,19 @@ $(function () {
             removeActive(tabMains);
             $(this).addClass("active");
             $(tabMains[i]).addClass("active");
+        });
+    });
+
+    // Tab2 
+    const tabLinks1 = $(".tab_service_main a");
+    const tabMains1 = $(".tab_service_content .tab_servie_item");
+    $.each(tabLinks1, function (i, item) { 
+        $(item).on("click",function(e){
+            e.preventDefault();
+            removeActive(tabLinks1);
+            removeActive(tabMains1);
+            $(this).addClass("active");
+            $(tabMains1[i]).addClass("active");
         });
     });
  });

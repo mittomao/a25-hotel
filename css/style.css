@@ -452,10 +452,18 @@ ul.sub_menu{
 }
 
 
+
+
 .wrapCard .card_img img{
     width: 100%;
     object-fit: cover;
+    transition: .4s ease-in;
 }
+
+.wrapCard .card_img:hover img{
+    transform:scale(1.2) rotate(-5deg);
+} 
+
 .wrapCard .card_img h3.card_title{
     position: absolute;
     bottom: 0;
@@ -506,6 +514,9 @@ a.btn-geranal:hover{
 
 .btn_radius{
     border-radius: 15px;
+}
+.btn_radius1{
+    border-radius: 15px 0 15px 0;
 }
 
 
@@ -633,11 +644,12 @@ a.btn_footer{
 }
 
 .end-footer{
-    background: rgba(0,0,0,.5);
+    background: rgba(255,255,255,.5);
     position: fixed;
     bottom:0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 .end-footer .contact-phone-ft{
     justify-content: flex-start;
@@ -645,11 +657,14 @@ a.btn_footer{
 }
 .end-footer .contact-phone-ft span{
     font-style: normal;
-    color: #fff;
+    color: #000;
     
 }
 .end-footer .contact-phone-ft span a{
     font-size: 16px;
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 20px;
 }
 
 

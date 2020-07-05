@@ -112,23 +112,6 @@
     font-size: 18px;
     font-weight: bold;
 }
-.booking__header .nav-area{
-    margin-left: auto;
-    margin-top: -36px;
-}
-.booking__header .nav-area img{
-    height: 36px;
-}
-
-.booking__header .nav-area a{
-    margin-top: 5px;
-    padding: 4px 10px;
-    border-radius: 2px;
-    line-height:28px;
-    background:#83d5ed ;
-    font-size: 11px;
-    color: #fff;
-}
 
 .booking__body{
     width: 100%;

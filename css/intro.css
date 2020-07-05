@@ -1,30 +1,3 @@
-.path{
-    margin: 30px 0;
-}
-.path ul{
-    display: flex;
-    border-bottom: 1px dotted #e2e2e2;
-}
-
-.path ul li{
-    margin-right: 30px;
-    border-bottom: 1px dotted #A5772C;
-}
-.path ul li a{
-    color: #666;
-    font-size: 15px; 
-    text-decoration: none;
-}
-
-.path ul li a:hover{
-    color: #A5772C;
-}
-
-
-.path ul li:last-child a{
-    color: #888;
-}
-
 
 /* intro_hotels */
 .intro_hotels{}

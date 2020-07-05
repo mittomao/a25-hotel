@@ -421,6 +421,7 @@ ul.sub_menu{
 /* Card San Pham */
 .wrapCard{
     width: 100%;
+    margin-bottom: 30px;
    
 }
 .border_lime{
@@ -443,9 +444,10 @@ ul.sub_menu{
     left: -75%;
     width: 50%;
     height: 100%;
+    z-index: 100;
     /* background: red; */
     transform: skewX(-25deg);
-    transition: all .6s ease;
+    transition: all .5s ease;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
 }
 .wrapCard .card_img:hover:before{
@@ -534,6 +536,57 @@ a.btn-geranal:hover{
 
 /* End Card San Pham */
 
+/* Nav Area */
+
+.nav-area{
+    margin-left: auto;
+    margin-top: -36px;
+}
+ .nav-area img{
+    height: 36px;
+}
+ .nav-area a{
+    margin-top: 5px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    line-height:28px;
+    background:#83d5ed ;
+    font-size: 11px;
+    color: #fff;
+}
+
+/* Path */
+.path{
+    margin: 30px 0;
+}
+.path ul{
+    display: flex;
+    border-bottom: 1px dotted #e2e2e2;
+}
+
+.path ul li{
+    margin-right: 30px;
+    border-bottom: 1px dotted #A5772C;
+}
+.path ul li a{
+    color: #666;
+    font-size: 15px; 
+    text-decoration: none;
+}
+
+.path ul li a:hover{
+    color: #A5772C;
+}
+
+
+.path ul li:last-child a{
+    color: #888;
+}
+
+
+
+
+/* End Main */
 /* Footer */
 footer{
     width: 100%;

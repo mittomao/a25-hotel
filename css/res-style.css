@@ -9,6 +9,17 @@
         width: 100%;
         
     }
+    
+    .path {
+        margin: 65px 0 65px 0;
+    }
+    .input-search {
+        float: none;
+        margin-top: -80px;
+    }
+    .input-search input{
+        width: 100%;
+    }
 }
 
 
@@ -44,7 +55,12 @@
         justify-content:space-around
     }
 
+    /* Nav - area */
+    .nav-area{
+        display: none;
+     }
 }
+
 
 
 

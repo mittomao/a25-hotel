@@ -1,3 +1,18 @@
+@media (max-width:575px){
+    header a.logo img {
+        height: 90px;
+    }
+    .video-intro {
+        width:100%;
+    }
+    .image-text {
+        width: 100%;
+        
+    }
+}
+
+
+
 @media (max-width:991px){
     header{
         padding: 0 0;
@@ -10,13 +25,13 @@
         display: none;
     }
     .header-top{
-        top: -5px;
+        top: 42px;
         right: 75px;
     }
     .menu a.toggle-menu-mb{
         display: block;
         position: fixed;
-        top: 45px;
+        top: 50px;
         right: 15px;
     }
 

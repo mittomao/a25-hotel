@@ -1,0 +1,106 @@
+.path{
+    margin: 30px 0;
+}
+.path ul{
+    display: flex;
+    border-bottom: 1px dotted #e2e2e2;
+}
+
+.path ul li{
+    margin-right: 30px;
+    border-bottom: 1px dotted #A5772C;
+}
+.path ul li a{
+    color: #666;
+    font-size: 15px; 
+    text-decoration: none;
+}
+
+.path ul li a:hover{
+    color: #A5772C;
+}
+
+
+.path ul li:last-child a{
+    color: #888;
+}
+
+
+/* intro_hotels */
+.intro_hotels{}
+.intro_hotels p.content{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.video-intro{
+    text-align: center;
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.video-intro img{
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.play-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 68px;
+    height: 48px;
+    transition: opacity .25s cubic-bezier(0.0,0.0,0.2,1);
+    border:none;
+    background: transparent;
+    outline:none;
+    z-index: 35;
+
+}
+.play-video svg{
+    width: 100%;
+}   
+.video-intro iframe{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
+.image-text{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-text img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-me{
+    margin-top: 20px;
+}
+.contact-me p{
+    margin-bottom:7px;
+}
+
+
+/* Ed intro_hotels */
+

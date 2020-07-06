@@ -8,6 +8,8 @@
     font-weight: 600;
 }
 
+
+
 .danhmuc {
     position: relative;
     margin-bottom: 30px;
@@ -258,11 +260,14 @@ option {
     color: #333;
     padding-left: 10px;
 }
-
+.form#form_s {
+    margin-top: 40px;
+}
 .vt_search {
     width: 100%;
     text-align: left;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .search-tour {

@@ -1,3 +1,10 @@
+.schedule-tour p{
+    color: #111;
+}
+
+.img-intro{
+    text-align: center;
+}
 /* left */
 
 .mn_cndl {
@@ -48,7 +55,7 @@ form#form_s {
 .left {
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
+    top: 20%;
 }
 
 .vt_search select,

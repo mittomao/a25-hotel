@@ -204,7 +204,7 @@ header nav{
  
 }
 .menu  ul li.nav-item:hover  ul.sub_menu li{
-    animation: down .6s ease;
+    animation: down .8s ease;
 }
 
 
@@ -872,10 +872,13 @@ option {
     0%{
         /* height: 0;
         opacity: 0.1; */
-        transform:scaleY(0);
+        transform:scaleY(0.2);
+        /* transform: translateY(-100%); */
     }
     100%{
         /* transform:translateY(0); */
         transform:scaleY(1);
+        /* transform: translateY(0%); */
+
     }
 }

@@ -106,12 +106,7 @@
     display: flex;
     align-items: center;
 }
- h3.title_box{
-    color: #D0BC3F;
-    margin-bottom: 0;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 .booking__body{
     width: 100%;

@@ -1,0 +1,12 @@
+.form--booking{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form--booking .img__left{
+    width: 100%;
+}
+.form--booking .img__left img{
+    width: 100%;
+    object-fit: cover;
+}
+

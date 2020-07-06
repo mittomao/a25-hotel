@@ -94,8 +94,8 @@ function showData(data) {
                                 <h3 class="card_title bg_1"><a href="#">${item.title}</a></h3>
                             </div>
                             <div class="card_body border_lime">
-                            <p>${item.content}.</p>
-                            <a href="#" class="btn-geranal btn_radius">Xem Thêm</a>
+                            <p class="line line-2">${item.content}.</p>
+                            <a href="hotel-child.html" class="btn-geranal btn_radius">Xem Thêm</a>
                             </div>
                 </div>
         </div>`;

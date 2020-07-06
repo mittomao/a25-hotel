@@ -201,18 +201,12 @@ header nav{
     visibility:visible;
     opacity: 1;
     z-index: 100;
-    animation: down .2s ease-in-out;
+ 
 }
-@keyframes down{
-    0%{
-        /* height: 0;
-        opacity: 0.1; */
-        transform:translateY(-50%);
-    }
-    100%{
-        transform:translateY(0);
-    }
+.menu  ul li.nav-item:hover  ul.sub_menu li{
+    animation: down .6s ease;
 }
+
 
 ul.sub_menu {
     position: absolute;
@@ -248,13 +242,16 @@ ul.sub_menu>li a {
 
 /* Sub-menu-child */
 
-ul.sub_menu li:hover>ul.sub_menu_child {
+ul.sub_menu li:hover>ul.sub_menu_child{
     overflow: visible;
     opacity: 1;
     z-index: 100;
-    animation: down .4s ease-in;
-
+    
 }
+ul.sub_menu li:hover>ul.sub_menu_child li{
+    animation: down .6s ease;
+}
+
 
 li>ul.sub_menu_child {
     position: absolute;
@@ -530,11 +527,11 @@ li>ul.sub_menu_child {
 }
 
 .wrapCard .card_body p{
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2; */
 }
 .wrapCard .card_body p img{
     width: auto;
@@ -610,7 +607,7 @@ a.btn-geranal:hover{
 }
 
 
-
+/* End Path */
 
 
 /* Setup Cacs Class Chung */
@@ -646,6 +643,9 @@ h2._title{
 .line-4{
     -webkit-line-clamp: 4;
 }
+.line-5{
+    -webkit-line-clamp: 5;
+}
 
 .spanPhone{
     color: #A5772C;
@@ -661,9 +661,33 @@ p.content{
     color: #000;
 }
 
+h3.title_box{
+    color: #D0BC3F;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
+span.starRed{
+    font-size: 12px;
+    color: red;
+    padding-left: 10px;
+}
 
+.form-date{
+    position: relative;
+}
+.form-date::before{
+        content: '';
+        position: absolute;
+        top: 65%;
+        right: 0;
+        background: url(./../img/calendar.png) no-repeat !important;
+        width: 20px;
+        height: 20px;
+}
 
+/* End */
 
 
 
@@ -841,3 +865,17 @@ option {
 
 
 /* end search */
+
+/* Key Faramre */
+
+@keyframes down{
+    0%{
+        /* height: 0;
+        opacity: 0.1; */
+        transform:scaleY(0);
+    }
+    100%{
+        /* transform:translateY(0); */
+        transform:scaleY(1);
+    }
+}

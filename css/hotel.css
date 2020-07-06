@@ -95,12 +95,103 @@ a.button_ok:hover:before ,a.button_ok:hover:after{
 }
 
 
+/* Detail Hotel */
+.list-rooms{
+    margin-top: 15px;
+
+}
+
+
+.wrapCard-hotels{
+    width: 100%;
+}
+.wrapCard-hotels a{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+}
+.wrapCard-hotels p:not(:last-child){
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+
+.wrapCard-hotels .border-none{
+    border-top-left-radius: 0;
+}
+.wrapCard-hotels .card_body_ht{
+    padding: 0 15px 15px 15px;
+    background: #f3f3f3;
+    border-bottom-right-radius: 0;
+}
+.wrapCard-hotels a.img_over{
+    text-align: center;
+}
+.wrapCard-hotels a.img_over img{
+
+}
+
+.wrapCard .card_body {
+    background: #FDFAEA;
+}
+
+
+span.price{
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.title-hts{
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.title-hts:hover{
+    color: #A5772C;
+}
+
+
+
+a.btn-inline{
+    display: inline-block;
+    text-align: left;
+}
 
 
 
 
+/* List image */
+ul.list_img{
+    display: grid;
+    grid-template-columns: repeat( 4 , minmax(250px, 1fr) );
+    grid-gap: 15px;
+}
+ul.list_img li img{
+    width: 100%;
+    object-fit: cover;
+}
+/*End  List image */
 
+/* Map Hotel */
+.map-hotels{
+    margin: 30px 0;
+}
+.map-hotels iframe{
+    width: 100%;
+    height: 350px;
+}
+/* End Map Hotel */
 
+/* contact fb */
+.contact-fb{
+    width: 100%;
+    margin: 15px 0;
+}
+/* End contact fb */
 @media (max-width:991px){
     main{
        position: relative;

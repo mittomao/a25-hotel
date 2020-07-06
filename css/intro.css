@@ -1,12 +1,12 @@
 
 /* intro_hotels */
 .intro_hotels{}
-.intro_hotels p.content{
+/* .intro_hotels p.content{
     font-size: 18px;
     margin-top: 15px;
     font-weight: bold;
     color: #000;
-}
+} */
 
 .video-intro{
     text-align: center;

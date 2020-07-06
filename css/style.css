@@ -16,7 +16,17 @@ ul {
     margin-bottom: 0;
 }
 
-.header-top {
+<<<<<<< HEAD header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a.logo img {
+    height: 75px;
+}
+
+=======>>>>>>>a064d87adb923b84b0ba4c9ef89598c32b11b289 .header-top {
     width: 100%;
     padding: 0 15px;
 }
@@ -25,7 +35,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px 0;
     box-sizing: border-box;
 }
 
@@ -41,6 +51,7 @@ ul {
     font-size: 18px;
     color: #093;
     font-weight: 900;
+    text-decoration: none;
 }
 
 
@@ -71,6 +82,7 @@ ul {
 .menu ul li.nav-item {
     border-left: 1px dotted #bdc3c7;
     position: relative;
+    transition: all .4s ease;
 }
 
 .menu ul.nav_menu>li:last-child {
@@ -79,10 +91,12 @@ ul {
 
 .menu ul li a {
     text-align: center;
-    color: #545454;
+    color: #575757;
     font-weight: 600;
     text-transform: uppercase;
     padding: .3rem 1.2rem;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .menu ul.nav_menu li.nav-item a:hover {
@@ -109,19 +123,19 @@ ul {
     overflow: visible;
     opacity: 1;
     z-index: 100;
-    height: auto;
 }
 
 ul.sub_menu {
     position: absolute;
     top: 100%;
+    /* left: 100%; */
     min-width: 240px;
     height: 0;
     background: rgba(0, 0, 0, .7);
     overflow: hidden;
     opacity: 0;
     z-index: 0;
-    transition: all .4s ease-in;
+    transition: all .4s ease;
 }
 
 ul.sub_menu li {

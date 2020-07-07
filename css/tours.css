@@ -1,3 +1,10 @@
+.schedule-tour p{
+    color: #111;
+}
+
+.img-intro{
+    text-align: center;
+}
 /* left */
 
 .mn_cndl {
@@ -12,7 +19,9 @@
     text-transform: uppercase;
     height: 35px;
 }
-
+form#form_s {
+    margin-top: 40px;
+}
 .l_tours {
     float: left;
     width: 250px
@@ -46,7 +55,7 @@
 .left {
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
+    top: 20%;
 }
 
 .vt_search select,
@@ -119,7 +128,7 @@ option {
 .vt_search {
     width: 100%;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .search-tour {
@@ -303,7 +312,7 @@ figure:hover::before {
 
 .right_img_ht h1 {
     font-weight: bold;
-    color: #a6531d;
+    color: #A5772C;
     margin-bottom: 10px;
     font-size: 18px;
     margin-top: 0;

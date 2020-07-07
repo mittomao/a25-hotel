@@ -1,3 +1,121 @@
+
+
+
+@media (max-width:991px){
+    header{
+        padding: 0 0;
+    }
+
+    .contact-phone .hotline{
+        display: none;
+    }
+    .menu  ul.nav_menu{
+        display: none;
+    }
+    .header-top {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 75px;
+    }
+    .menu a.toggle-menu-mb{
+        display: block;
+        position: fixed;
+        top: 58px;
+        right: 15px;
+    }
+
+    /* Menu Moblie */
+    .menu--mobile .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Menu Footer */
+    .menu-footer ul {
+        flex-wrap: wrap;
+        justify-content:space-around
+    }
+
+    /* Nav - area */
+    .nav-area{
+        display: none;
+     }
+
+     /* Icon Phone */
+     .phone-mobile{
+         display: block;
+     }
+
+     .end-footer{
+         display: none;
+     }
+
+
+}
+
+
+
+
+@media (max-width:575px){
+    header a.logo img {
+        height: 90px;
+    }
+    .video-intro {
+        width:100%;
+    }
+    .image-text {
+        width: 100%;
+        
+    }
+    
+
+    .menu a.toggle-menu-mb{
+        display: block;
+        position: fixed;
+        top: 32px;
+        right: 15px;
+    }
+    
+    .path {
+        margin: 65px 0 65px 0;
+    }
+    .input-search {
+        float: none;
+        margin-top: -80px;
+    }
+    .input-search input{
+        width: 100%;
+    }
+
+    /* Dot Carousel */
+    .list_hotels .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+       
+    }
+    .list_hotels .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+       
+    }
+
+    /* Menu Mobile */
+    .menu--mobile {
+        top: 90px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 576px)
 {
 .container {

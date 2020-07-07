@@ -191,7 +191,7 @@ figure:hover::before {
 .left {
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
+    top: 20%;
 }
 
 .vt_search select,
@@ -260,7 +260,7 @@ option {
     color: #333;
     padding-left: 10px;
 }
-.form#form_s {
+form#form_s {
     margin-top: 40px;
 }
 .vt_search {

@@ -20,12 +20,15 @@
     .menu a.toggle-menu-mb{
         display: block;
         position: fixed;
-        top: 50px;
+        top: 58px;
         right: 15px;
     }
 
     /* Menu Moblie */
-
+    .menu--mobile .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     /* Menu Footer */
     .menu-footer ul {
@@ -37,6 +40,17 @@
     .nav-area{
         display: none;
      }
+
+     /* Icon Phone */
+     .phone-mobile{
+         display: block;
+     }
+
+     .end-footer{
+         display: none;
+     }
+
+
 }
 
 
@@ -87,10 +101,7 @@
     .menu--mobile {
         top: 90px;
     }
-    .menu--mobile .container{
-        padding-left: 0;
-        padding-right: 0;
-    }
+    
 }
 
 

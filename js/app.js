@@ -53,6 +53,15 @@ $(function () {
             $(tabMains1[i]).addClass("active");
         });
     });
+
+
+    // CHange Language
+    $(".vn").on("click",function () { 
+        alert("Bạn Đã Đổi Ngôn Ngữ Sang Tiếng Việt");
+     });
+     $(".en").on("click",function () { 
+        alert("You have switched the language to English");
+     });
  });
 
  function removeActive(tabs) { 

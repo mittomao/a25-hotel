@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .layer{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .layer .box{
+            width: 200px;
+            height: 200px;
+            margin: 0 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 33px;
+            color: #fff;
+        }
+        .layer .box:nth-child(1){
+            background: red;
+
+        }
+        .layer .box:nth-child(2){
+            background: blue;
+
+        }
+
+        .layer .box:nth-child(3){
+            background: lime;
+
+        }
+
+
+
+        .layer:nth-child(1){
+           border: 3px solid red;
+        }
+        .layer:nth-child(2){
+            border: 3px solid lime;
+        }
+        .layer:nth-child(3){
+            border: 3px solid blue;
+        }
+        .layer:nth-child(4){
+            border: 3px solid purple;
+        }
+
+        .delighter .box:nth-child(1)
+        { 
+            transform: translateX(-500%);
+        }
+        .delighter .box:nth-child(2)
+        { 
+            transform: translateY(500%);
+        }
+        .delighter .box:nth-child(3)
+        { 
+            transform: translateX(500%);
+        }
+
+        .delighter.delighter.started .box:nth-child(1)
+        { 
+            transform: translateX(0%);
+        }
+        .delighter.delighter.started .box:nth-child(2)
+        { 
+            transform: translateY(0);
+        }
+        .delighter.delighter.started .box:nth-child(3)
+        { 
+            transform: translateX(0);
+        }
+
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="layer"  data-delighter="start:0.3">
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+        </div>
+        <div class="layer"  data-delighter="start:0.3">
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+
+        </div>
+        <div class="layer"  data-delighter="start:0.3">
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+
+        </div>
+        <div class="layer"  data-delighter="start:0.3">
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+
+        </div>
+    </div>
+</body>
+<script src="./js/delighters.min.js">
+
+</script>
+<script>    
+    const boxs= document.querySelectorAll(".layer >  .box");
+    boxs.forEach((box,i)=>{
+        box.style.transition = `transform ${i / 6}s`;
+    });
+</script>
+</html>

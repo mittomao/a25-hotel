@@ -274,7 +274,39 @@
  }
  .tab_servie_item.active{
      display: block;
+     animation: goLoad .3s ease-in-out;
  }
 
+ @keyframes goLoad{
+     from{
+         transform: scale(0);
+         opacity: 0.3;
+     }
+     to{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+ }
+
+ .delighter .wrapCard
+{ 
+    transform: translateY(300%);
+}
+
+.delighter.delighter.started .wrapCard
+{ 
+    transform: translateY(0%);
+}
+
+.delighter .service__list{
+    transform: translateY(300%);
+    transition: transform .6s;
+}
+
+.delighter.delighter.started .service__list
+{ 
+    transform: translateY(0%);
+}
 
 /* End service */

@@ -81,11 +81,11 @@
 
 .send_mes {
     margin: auto;
-    background: rgb(171, 36, 42);
-    background: -moz-linear-gradient(left, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
+    background: linear-gradient(to right, rgb(236, 213, 63) 0%,rgb(235, 228, 25) 24%,rgb(206, 209, 53) 61%,rgb(224, 210, 11) 100%);
+    /* background: -moz-linear-gradient(left, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
     background: -webkit-linear-gradient(left, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
     background: linear-gradient(to right, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ab242a', endColorstr='#a4272d', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ab242a', endColorstr='#a4272d', GradientType=1); */
     width: 200px;
     text-align: center;
     border-radius: 20px;

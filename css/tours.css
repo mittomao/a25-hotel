@@ -255,11 +255,11 @@ figure:hover::before {
     cursor: pointer;
     display: inline-block;
     /* background-color: #8eb733; */
-    background: rgb(0, 104, 55);
-    background: -moz-linear-gradient(left, rgb(0, 104, 55) 0%, rgb(51, 148, 71) 50%, rgb(0, 104, 55) 100%);
+    background: linear-gradient(to right, rgb(236, 213, 63) 0%,rgb(235, 228, 25) 24%,rgb(206, 209, 53) 61%,rgb(224, 210, 11) 100%);
+    /* background: -moz-linear-gradient(left, rgb(0, 104, 55) 0%, rgb(51, 148, 71) 50%, rgb(0, 104, 55) 100%);
     background: -webkit-linear-gradient(left, rgb(0, 104, 55) 0%, rgb(51, 148, 71) 50%, rgb(0, 104, 55) 100%);
     background: linear-gradient(to right, rgb(0, 104, 55) 0%, rgb(51, 148, 71) 50%, rgb(0, 104, 55) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ab242a', endColorstr='#a4272d', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ab242a', endColorstr='#a4272d', GradientType=1); */
     color: #fff;
     border-radius: 15px 0;
     text-align: center;
@@ -278,11 +278,7 @@ figure:hover::before {
 }
 
 .detail:hover {
-    background: rgb(171, 36, 42);
-    background: -moz-linear-gradient(left, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
-    background: -webkit-linear-gradient(left, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
-    background: linear-gradient(to right, rgb(171, 36, 42) 0%, rgb(251, 2, 2) 24%, rgb(239, 22, 2) 61%, rgb(164, 39, 45) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#006837', endColorstr='#006837', GradientType=1);
+    background: linear-gradient(to right, #093 0%,rgb(18, 207, 116) 24%,rgb(78, 228, 151) 61%,rgb(20, 145, 40) 100%);
 }
 
 

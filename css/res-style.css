@@ -6,6 +6,11 @@
         padding: 0 0;
     }
 
+    header a.logo img {
+        height: 80px;
+        padding: 15px;
+    }
+
     .contact-phone .hotline{
         display: none;
     }
@@ -20,7 +25,7 @@
     .menu a.toggle-menu-mb{
         display: block;
         position: fixed;
-        top: 58px;
+        top: 30px;
         right: 15px;
     }
 
@@ -50,6 +55,15 @@
          display: none;
      }
 
+    /* Dot Carousel */
+    .list_hotels .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+    
+    }
+    .list_hotels .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+    
+    }
 
 }
 
@@ -57,9 +71,7 @@
 
 
 @media (max-width:575px){
-    header a.logo img {
-        height: 90px;
-    }
+    
     .video-intro {
         width:100%;
     }
@@ -87,19 +99,10 @@
         width: 100%;
     }
 
-    /* Dot Carousel */
-    .list_hotels .owl-carousel .owl-nav button.owl-next {
-        right: 0;
-       
-    }
-    .list_hotels .owl-carousel .owl-nav button.owl-prev {
-        left: 0;
-       
-    }
-
+   
     /* Menu Mobile */
     .menu--mobile {
-        top: 90px;
+        top: 80px;
     }
     
 }
